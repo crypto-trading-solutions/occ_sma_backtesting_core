@@ -1,0 +1,27 @@
+{
+  "name": "occ_sma_backtesting_core",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crypto-trading-solutions/occ_sma_backtesting_core.git"
+  },
+  "keywords": [
+    "trading",
+    "btc",
+    "binanct"
+  ],
+  "author": "illuschwo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/crypto-trading-solutions/occ_sma_backtesting_core/issues"
+  },
+  "homepage": "https://github.com/crypto-trading-solutions/occ_sma_backtesting_core#readme",
+  "dependencies": {
+    "axios": "^0.20.0"
+  }
+}
