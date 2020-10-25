@@ -1,12 +1,9 @@
 const axios = require('axios');
 const sma = require('sma');
-const config = require('./config/backTestConfig');
 const util = require('util');
 
-
-function dateToTimestamp(date) {
-  return new Date(date).getTime();
-}
+const config = require('./config/backTestConfig');
+const dateToTimestamp = require('./utils/dateUtils');
 
 async function processKlinesdata(data) {
   let processedData = new Array();
@@ -42,8 +39,8 @@ async function getBinanceData() {
     params: {
       symbol: config.symbol,
       interval: config.interval,
-      startTime: dateToTimestamp(config.startDate),
-      endTime: dateToTimestamp(config.endDate),
+      startTime: await dateToTimestamp(config.startDate),
+      endTime: await dateToTimestamp(config.endDate),
       limit: 1500
     }
   }).then(async function (response) {
