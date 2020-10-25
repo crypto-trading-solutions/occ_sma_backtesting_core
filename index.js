@@ -1,6 +1,6 @@
 const axios = require('axios');
 const sma = require('sma');
-const config = require('./config/config');
+const config = require('./config/backTestConfig');
 const util = require('util');
 
 
