@@ -4,7 +4,7 @@ const util = require('util');
 
 const config = require('./config/backTestConfig');
 const dateToTimestamp = require('./utils/dateUtils');
-const {processKlinesdata,makeScaledTimeframeData} = require("./utils/klinesDataUtils")
+const { processKlinesdata, makeScaledTimeframeData } = require("./utils/klinesDataUtils")
 
 async function getBinanceData() {
   console.log(`CONFIG:${util.inspect(config)}`);
